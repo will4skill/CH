@@ -1,6 +1,3 @@
-// References
-// 1. https://www.npmjs.com/package/axios
-// 2. https://www.npmjs.com/package/node-xlsx
 const express = require('express');
 const router = express.Router();
 const axios = require('axios');
