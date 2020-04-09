@@ -15,7 +15,7 @@ router.get('/', async function(req, res){
 
   if ( protocol[current][next] == name_type || protocol[current][next] == "B" ) {
     try {
-      const result = await axios.get(`http://localhost:3000/api/services/${req.query.new_service}/?name=${req.query.name}`);
+      const result = await axios.get(`https://warm-journey-29261.herokuapp.com/services/${req.query.new_service}/?name=${req.query.name}`);
       res.send({ data: result.data, current: "s" + next, protocol });
     } catch (err) {
       console.error(err);
